@@ -1,0 +1,167 @@
+
+/*Para el background del index*/
+#indexPage .page__background {
+    background-color: #280F74 !important;
+    /*background: url("https://i.imgur.com/jXLckPc.png") !important;*/
+    background-position: center top !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+#splitter .page__background {
+    background-color: white !important;
+}
+
+.toolbar{
+    border-radius: 10px !important;
+}
+
+.labelMenuPage{
+    font-family: Roboto,Noto,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    display: block;
+    font-size: 20px; 
+    color: #280F74;
+    font-weight: 500;
+}
+
+/*Para la card principal del index*/
+.loginCard{
+    background-color: #ffffff; 
+    border-radius: 10px;
+    margin: 0px 35px 16px 35px;
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16);
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16);
+
+    font-family: Roboto,Noto,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 17px;
+    color: #7F7F7F;
+    font-weight: lighter;
+}
+
+.addMachineCard{
+    background-color: #ffffff; 
+    border-radius: 10px;
+    margin: 0px 35px 16px 35px;
+    -webkit-box-shadow: 0px 10px 34px -9px rgba(255,105,110,1);
+    -moz-box-shadow: 0px 10px 34px -9px rgba(255,105,110,1);
+    box-shadow: 0px 10px 34px -9px rgba(255,105,110,1);
+
+    font-family: Roboto,Noto,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 17px;
+    color: #7F7F7F;
+    font-weight: lighter;
+}
+
+
+
+/*Para la card principal del index*/
+.searchCard{
+
+    font-family: Roboto,Noto,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    border-radius: 10px !important;
+    background-color: #fafafa;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiP…AgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==);
+    background-size: 18px;
+    font-size: 17px;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.12), 0 2px 2px 0 rgba(0,0,0,.24), 0 1px 0 0 rgba(255,255,255,.06) inset;
+}
+
+/*Para el botón de entrar normal*/
+.loginButton{
+    background: #FF696E;
+    border-radius: 25px;
+    color: #ffffff;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/*Para el logo del index*/
+.imagenLogo{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 15% auto 35% auto;
+    -webkit-box-shadow: 0px 13px 25px -16px rgba(0,0,0,0.67);
+    -moz-box-shadow: 0px 13px 25px -16px rgba(0,0,0,0.67);
+    box-shadow: 0px 13px 25px -16px rgba(0,0,0,0.67);
+}
+
+/*Para redondear los bordes de los alert dialogs*/
+.alert-dialog-container, .alert-dialog-container--material, .alert-dialog, .alert-dialog--material{
+    border-radius: 10px;
+}
+
+/*Para los elementos de la lista del menu****/
+#adminSpliterList .list--material{
+    background-color: white !important;
+    
+}
+
+#adminSpliterList .list-item--material__center{
+    margin: 8px 16px 8px 0px !important;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 0 !important;
+    min-height: 57px !important; 
+    max-height: 57px !important;
+}
+
+#searchInputStyle .search-input--material{
+    width: 90% !important; 
+    border-radius: 10px !important;
+}
+
+#closeSesionItem .list-item--material__center{
+    margin: 8px 8px 8px 0px !important;
+    background-color: #280F74 !important;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    padding: 0 !important;
+    min-height: 57px !important; 
+    max-height: 57px !important;
+}
+
+#adminSpliterList .list-item{
+    color: #280F74;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0px;
+}
+
+.listImage{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 41px;
+    height: 41px;
+    margin: auto;
+} 
+  
+.overflow {
+    display: block;
+    width: 73%;
+    outline: none;
+    margin: 0px 20px 0px 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/**********************************************************************************/
+
+.icon {
+    text-align: left !important;
+    font-size: 30px !important;
+    margin: 16px 16px 16px 8px !important;
+    color: #FF696E !important;
+}

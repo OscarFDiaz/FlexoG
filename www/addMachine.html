@@ -1,0 +1,25 @@
+<ons-page id="addMachine">
+
+    <ons-card class="addMachineCard" style="margin-top: 35% !important;">
+
+        <ons-input id="mName" placeholder="Nombre de maquina" 
+            style="width: 100% !important; margin-bottom: 50px !important; margin-top: 50px !important; text-align: center !important;" maxlength="49">
+        </ons-input>
+        
+        <br>
+
+        <ons-input id="mDesc" placeholder="Descripción de maquina" style="width: 100% !important; margin-bottom: 50px !important;" maxlength="99"></ons-input>
+
+        <ons-button class="loginButton" onclick="addMachine(mName.value, mDesc.value)" 
+        style="width: 100% !important; margin-bottom: 16px !important;">AÑADIR MAQUINA</ons-button>
+    </ons-card>
+        
+
+    <script>
+        document.addEventListener('init', function (event) {
+            if (event.target.matches('#addMachine')) {
+                document.getElementById("titleSplitterAdmin").innerHTML = "MAQUINA - AÑADIR";
+            }
+        }, false);
+    </script>
+</ons-page>

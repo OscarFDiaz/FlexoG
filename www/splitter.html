@@ -1,0 +1,70 @@
+<ons-page id="splitter">
+    <ons-toolbar id="toolbar"">
+        <div class=" left">
+        <ons-toolbar-button onclick="fn.open()">
+            <i class='icon ion-md-menu'style="font-size: 30px !important; margin: 8px 8px 16px 8px !important;"></i>
+        </ons-toolbar-button>
+        </div>
+        <div class="center labelMenuPage" id="titleSplitterAdmin">
+            INICIO
+        </div>
+    </ons-toolbar>
+    <ons-splitter>
+        <ons-splitter-side id="menu" side="left" width="100%" collapse swipeable>
+            <ons-page style="border-bottom-right-radius: 25px !important;">
+
+                <ons-list id="adminSpliterList">
+                    <ons-list-item onclick="fn.load('')" tappable disabled="true" style="border-radius: 25px !important">
+                        <i class='icon ion-md-clipboard' style="font-size: 32px !important;"></i>
+                        HISTORIAL TAREAS
+                    </ons-list-item>
+                    <ons-list-item onclick="fn.load('')" tappable disabled="true">
+                        <i class='icon ion-md-build'style="font-size: 32px !important;"></i>
+                        TIPO PIEZA
+                    </ons-list-item>
+                    <ons-list-item onclick="fn.load('')" tappable disabled="true">
+                        <i class='icon ion-ios-list'style="font-size: 32px !important;"></i>
+                        TAREA
+                    </ons-list-item>
+                    <ons-list-item onclick="fn.load('')" tappable disabled="true">
+                        <i class='icon ion-md-construct'style="font-size: 32px !important;"></i>
+                        PIEZAS
+                    </ons-list-item>
+                    <ons-list-item onclick="fn.load('')" tappable expandable>
+                    <i class='icon ion-md-desktop' style="font-size: 32px !important;"></i>
+                        MAQUINA 
+                        <div class="expandable-content">
+                            <ons-list-item onclick="fn.load('addMachine.html')" tappable style="margin: 0px 0px 0px 32px !important;">
+                                <i class='icon ion-md-add' style="font-size: 32px !important;"></i>
+                                AÑADIR
+                            </ons-list-item>
+    
+                            <ons-list-item onclick="fn.load('searchMachine.html')" tappable style="margin: 0px 0px 0px 32px !important;">
+                                <i class='icon ion-md-search' style="font-size: 32px !important;"></i>
+                                BUSCAR
+                            </ons-list-item>
+    
+                            <ons-list-item onclick="fn.load('updateMachine.html')" tappable style="margin: 0px 0px 0px 32px !important;">
+                                <i class='icon ion-md-refresh' style="font-size: 32px !important;"></i>
+                                ACTUALIZAR
+                            </ons-list-item>
+                        </div>
+                    </ons-list-item>
+                    <ons-list-item onclick="fn.load('')" tappable style="border-radius: 25px !important">
+                        <i class='icon ion-md-person' style="font-size: 32px !important;"></i>
+                        CLIENTE
+                    </ons-list-item>
+                    <ons-list-item onclick="fn.load('')" tappable disabled="true">
+                        <i class='icon ion-md-cash' style="font-size: 32px !important;"></i>
+                        COMPRA
+                    </ons-list-item>
+                    <ons-list-item id="closeSesionItem" onclick="closeSesion()" tappable>
+                        <i class='icon ion-md-exit' style="font-size: 32px !important;"></i>
+                        SALIR
+                    </ons-list-item>
+                </ons-list>
+            </ons-page>
+        </ons-splitter-side>
+        <ons-splitter-content id="content" page="home.html"></ons-splitter-content>
+    </ons-splitter>
+</ons-page>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+        <!--IMPORT DE LOS ESTILOS DE ONSEN UI-->
+        <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+        <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+        <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+        <!--IMPORT DE LOS .JS, DEBEN ESTAR AQUI PARA PODER SER UTILIZADOS EN TODOS LADOS-->
+        <script src="scripts/login.js" type="text/javascript"></script>
+        <script src="scripts/splitter.js" type="text/javascript"></script>
+        <script src="scripts/addMachine.js" type="text/javascript"></script>
+        <script src="scripts/closeSesion.js" type="text/javascript"></script>
+        <script src="scripts/loadMachines.js" type="text/javascript"></script>
+        <script src="scripts/searchMachine.js" type="text/javascript"></script>
+        <script src="scripts/deleteMachine.js" type="text/javascript"></script>
+        <script src="scripts/loadMachinesToUpdate.js" type="text/javascript"></script>
+        <script src="scripts/resetID.js" type="text/javascript"></script>
+        <script src="scripts/resetID.js" type="text/javascript"></script>
+        <script src="scripts/alertDialog.js" type="text/javascript"></script>
+        <script src="scripts/updateMachine.js" type="text/javascript"></script>
+                    
+
+        <!--IMPORT DE LA HOJA DE ESTILOS LOCAL-->
+        <link rel="stylesheet" href="style.css">
+           
+        <title>FlexoG</title>
+    </head> 
+                                                                                                   
+    <body> 
+        <ons-navigator id="navigator" page="index.html"></ons-navigator>
+            <ons-template id="index.html">
+ 
+                <ons-page id="indexPage">
+                    <img class="imagenLogo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTkoKansM62ewS0GqhRylAtPD8qyexrN5I7y4foSeM-jd1PtjF6">
+ 
+                    <ons-card class="loginCard">   
+                        <ons-input id="userLogin" modifier="underbar" placeholder="Usuario" style="width: 100%; margin-top: 8px; margin-bottom: 8px;" float></ons-input>
+                        <ons-input id="passLogin" modifier="underbar" placeholder="Contraseña" type="password" style="width:100%; margin-top: 8px; margin-bottom: 8px;" float></ons-input>
+                        <ons-button class="loginButton" onclick="login(document.getElementById('userLogin').value, document.getElementById('passLogin').value)">ENTRAR</ons-button>
+                    </ons-card>
+
+                    <ons-modal direction="up">
+                        <div style="text-align: center">
+                          <p>
+                            <ons-icon icon="md-spinner" size="28px" spin></ons-icon> Cargando, por favor espere...
+                          </p>
+                        </div>
+                    </ons-modal>
+
+                </ons-page>
+
+            </ons-template>
+        <script type="text/javascript" src="cordova.js"></script>
+    </body>
+</html>

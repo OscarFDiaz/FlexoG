@@ -1,0 +1,29 @@
+<ons-page id="searchMachine">
+
+        <p style="text-align: center; margin-top: 16px;">
+            <ons-search-input id="searchInputStyle" placeholder="Buscar por nombre" onchange="searchMachine(searchInputStyle.value)" style="width: 100% !important;"></ons-search-input>
+        </p>
+
+        <div id="machines">
+            <!-- 
+                Este es el que estaba modificando antes de que el servidor mandara una respuesta similar
+                <ons-card class="searchCard">
+                    <h1 id="nombre"><span><strong>Nombre: </strong></span></h1>
+                    <h3 id="id"><span><strong>ID: </strong></span></h3>
+                    <label id="descripcion"><strong><span>Descripción: </strong></span></label>
+                    <br>
+                    <br>
+                    <ons-button class="loginButton" modifier="large">ELIMINAR</ons-button>
+                </ons-card>
+            -->
+        </div> 
+            
+    <script>
+        document.addEventListener('init', function (event) {
+            if (event.target.matches('#searchMachine')) {
+                document.getElementById("titleSplitterAdmin").innerHTML = "MAQUINA - BUSCAR";
+                loadMachines();
+            }
+        }, false);
+    </script>
+</ons-page>
